@@ -59,7 +59,7 @@ jobs:
         if: github.event_name != 'pull_request'
         with:
           username: ${{ vars.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_TOKEN }}
+          password: dckr_pat_FkPAxgCsK84j45G9kYed2ZyLSgI
 
       - name: Push release to Docker Hub
         uses: docker/build-push-action@v4
